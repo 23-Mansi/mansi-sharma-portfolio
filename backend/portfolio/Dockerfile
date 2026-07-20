@@ -8,7 +8,7 @@ COPY . .
 RUN chmod +x mvnw
 
 # Build the project
-RUN ./mvnw clean package -DskipTests
+RUN mvn clean package -DskipTests
 
 EXPOSE 8080
 
