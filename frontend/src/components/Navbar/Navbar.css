@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-familt:Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 20px 80px;
+  background-color:#00001A;
+  color:antiquewhite;
+  position:fixed;
+  top:0;
+  left:0;
+}
+
+.logo{
+  font-size:32px;
+  cursor:pointer;
+}
+
+.menu{
+  display: flex;
+  gap:35px;
+  list-style:none;
+}
+
+.menu li {
+  cursor: pointer;
+  transition:.3s;
+}
+
+.menu li:hover{
+  color:rgb(99, 33, 165);
+}

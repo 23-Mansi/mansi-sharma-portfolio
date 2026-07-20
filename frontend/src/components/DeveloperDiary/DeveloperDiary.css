@@ -1,0 +1,39 @@
+.developer-diary{
+  background-color:#070722;
+  color:white;
+  padding:100px 20px 40px;
+}
+
+.container {
+  max-width:900px;
+  margin:auto;
+}
+
+.title{
+  text-align:center;
+  font-size:3rem;
+  margin-bottom:15px;
+}
+
+.quote{
+  text-align:center;
+  color:#a78bfa;
+  font-style:italic;
+  margin-bottom:50px;
+  line-height:1.7;
+}
+
+.story p{
+  font-size:1.1rem;
+  line-height:2;
+  margin-bottom:28px;
+}
+
+.story p:last-child{
+    margin-bottom:0;
+}
+
+.story span{
+  color:#9b5cff;
+  font-weight:600;
+}
