@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { getProjects } from "../../api/projectApi";
 import "./Project.css";
 
 
@@ -7,15 +8,18 @@ function Projects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-      fetch("http://localhost:8080/projects")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setProjects(data);
-        
-      });
-  }, []);
-  
+      async function loadProjects() {
+            try {
+                const data = await getProjects();
+                setProjects(data);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        loadProjects();
+
+    }, []);
 
   return (
     <section className="projects">
